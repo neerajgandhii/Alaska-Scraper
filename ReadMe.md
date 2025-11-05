@@ -49,23 +49,18 @@ Place `chromedriver.exe` in the project root or ensure it’s in your system PAT
 
 ### Clone the Repository
 
-```bash
-git clone <YOUR_REPO_URL>
-cd AlaskaScraper
+> git clone <YOUR_REPO_URL>
+> cd AlaskaScraper
 Run the Scraper
 Using Maven, you can compile and execute the scraper:
 
-bash
-Copy code
-mvn clean compile exec:java
+> mvn clean compile exec:java
 Or specify the main class explicitly:
 
-bash
-Copy code
-mvn exec:java "-Dexec.mainClass=AlaskaSenateScraper"
+> mvn exec:java "-Dexec.mainClass=AlaskaSenateScraper"
 After running, you’ll find the scraped data in alaska_senators.json.
 
-Approach Notes
+### Approach
 Extracting all information from the detail pages proved cleaner than mixing main page and detail page data.
 
 I removed the "Senator" prefix from names for uniformity.
@@ -74,5 +69,5 @@ Data is structured in a consistent order: Name → Title → Position → Party 
 
 Maven handles dependencies like Selenium and the JSON library automatically.
 
-⚠️ Please Note
+### ⚠️ Please Note
 This project is meant for educational purposes and small-scale scraping only. Avoid overloading the official AK Legislature site or using this for commercial purposes.
