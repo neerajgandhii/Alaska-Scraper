@@ -50,14 +50,18 @@ Place `chromedriver.exe` in the project root or ensure it’s in your system PAT
 ### Clone the Repository
 
 > git clone <YOUR_REPO_URL>
+
 > cd AlaskaScraper
+
 Run the Scraper
 Using Maven, you can compile and execute the scraper:
 
 > mvn clean compile exec:java
+
 Or specify the main class explicitly:
 
 > mvn exec:java "-Dexec.mainClass=AlaskaSenateScraper"
+
 After running, you’ll find the scraped data in alaska_senators.json.
 
 ### Approach
